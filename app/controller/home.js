@@ -16,6 +16,13 @@ class HomeController extends Controller {
     ctx.status = 200;
     ctx.body = result.data.data;
   }
+  async home() {
+    const { ctx, app } = this;
+    ctx.status = 200;
+    ctx.body = {
+      "abc": "123"
+    }
+  }
 }
 
 module.exports = HomeController;
